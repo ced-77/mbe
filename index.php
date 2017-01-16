@@ -9,6 +9,8 @@
 
 
 	// vérification de l'ouverture de la session
+		$session = session_utilisateur_existe();
+		var_dump($session);
 	// et récuperation des données de l'utilisateur
 
 

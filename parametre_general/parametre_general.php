@@ -8,7 +8,7 @@
  */
 
 	// activation des variables générales
-		$nom_site_complet = 'Massage et Bien Etre';
+		$nom_site_complet = 'Massages et Bien Etre';
 		$nom_site_court = 'MBE';
 
 
@@ -16,4 +16,12 @@
 		$nom_base_de_donnee = 'mbe';
 		$root_base_de_donnee = 'root';
 		$password_base_de_donnee = '';
+
+
+	// activation des variables pour la table utilisateur
+		$table_utilisateur = ''; // nom de la table gerant les utilisateurs
+	
+
+	// activation des variables pour la table produit
+		$table_produits = ''; // nom de la table des produits proposés
 
