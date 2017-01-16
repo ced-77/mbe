@@ -19,9 +19,9 @@
 
 
 	// activation des variables pour la table utilisateur
-		$table_utilisateur = ''; // nom de la table gerant les utilisateurs
+		$table_utilisateur = 'utilisateurs'; // nom de la table gerant les utilisateurs
 	
 
 	// activation des variables pour la table produit
-		$table_produits = ''; // nom de la table des produits proposés
+		$table_produits = 'services'; // nom de la table des produits proposés
 
