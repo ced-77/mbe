@@ -27,3 +27,14 @@
 
 /* Fin initialisation générale */
 
+/*
+	parametrage de la navigation
+*/
+
+	ul, li {
+		display: inline-block;
+		margin: 1rem;
+	}
+
+/* Fin de la navigation */
+

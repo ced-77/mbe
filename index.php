@@ -10,8 +10,15 @@
 
 	// vérification de l'ouverture de la session
 		$session = session_utilisateur_existe();
-		var_dump($session);
+		
 	// et récuperation des données de l'utilisateur
+		if ( ! empty($session) && $session != FALSE ) {
+			// on recupere les données de la session
+				
+		}
+
+		// essais pour controle du fonctionnement de la navigation
+			// $session = true;
 
 
 	// vérification recupération des variables GET de la barre d'adresse
