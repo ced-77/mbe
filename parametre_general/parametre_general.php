@@ -8,11 +8,12 @@
  */
 
 	// activation des variables générales
-		$nom_site = '';
+		$nom_site_complet = 'Massage et Bien Etre';
+		$nom_site_court = 'MBE';
 
 
 	// activation des variables pour la base de donnee
-		$nom_base_de_donnee = '';
+		$nom_base_de_donnee = 'mbe';
 		$root_base_de_donnee = 'root';
 		$password_base_de_donnee = '';
 
