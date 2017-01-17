@@ -1,0 +1,15 @@
+/*
+	Fichier de configuration pour la navigation générale du site
+	celle qui sera pris à l'arriver du site et non celle pour les 
+	menu de l'administration ou de la gestion des tarif
+*/
+
+
+	ul, li {
+		display: inline-block;
+		margin: 1rem;
+	}
+
+
+
+	
