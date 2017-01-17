@@ -23,6 +23,8 @@
 
 
 	// vérification recupération des variables GET de la barre d'adresse
+		$corp_page = ( empty( $_GET['page'] ) )? 'accueil' : $_GET['page'];
+
 	
 
 	
@@ -50,11 +52,32 @@
 	</head>
 	<body>
 		<header>
+			<!-- incorporation du premier bandeau -->
+				<section>
+					<img src="<?php echo($societe_chemin_nom_logo_organisme); ?>" alt="" />
+					<span>Certification n° <?php echo($societe_certification); ?></span>
+				</section>
+
+			<!-- incorporation du titre -->
+				<section>
+					<h1>Titre du site</h1>
+					<p>Phrase d'accroche</p>
+					<img src="<?php echo($societe_chemin_nom_logo_site); ?>" alt="" />
+					<p>
+						<span><?php echo($societe_numero_telephone); ?></span>
+						<span><?php echo($societe_adresse_mail); ?></span>
+					</p>
+					
+				</section>
+
+
 			<!-- incorporaion de la navigation -->
 				<?php include ('include/navigation.php'); ?>
 		</header>
 
 		<main>
+			<!-- incorporation du corp de page -->
+				<?php include ('include/'.$corp_page.'.php'); ?>
 			
 		</main>
 

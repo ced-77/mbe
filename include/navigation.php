@@ -8,10 +8,26 @@
 				<a href="#">Accueil</a>
 			</li>
 			<li>
-				<a href="#">1er choix</a>
+				<a href="#">Le massage amma</a>
 			</li>
 			<li>
-				<a href="#">2ème choix</a>
+				<a href="#">Prestation</a>
+			</li>
+
+			<li>
+				<a href="#">Demarche</a>
+			</li>
+
+			<li>
+				<a href="#">Tarifs</a>
+			</li>
+
+			<li>
+				<a href="#">Témoignages</a>
+			</li>
+
+			<li>
+				<a href="#">Parcours</a>
 			</li>
 		
 			<!--

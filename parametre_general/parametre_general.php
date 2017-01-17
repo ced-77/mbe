@@ -18,6 +18,9 @@
 		$societe_numero_siren = '000 00000 000';
 		$societe_numero_urssaf = '0000 0000 0000';
 		$societe_certification = '0000000000';
+		$societe_chemin_nom_logo_site = '';
+		$societe_chemin_nom_logo_organisme = '';
+
 
 
 
@@ -31,10 +34,12 @@
 
 	// activation des variables pour la table utilisateur
 		$table_utilisateur = 'utilisateurs'; // nom de la table gerant les utilisateurs
+		$chemin_photo_utilisateur =''; // nom du chemin où se trouve les photos des utilisateurs
 	
 
 	// activation des variables pour la table produits
 		$table_produits = 'massages'; // nom de la table des produits proposés
+		$chemin_photo_produit =''; // nom du chemin où se trouve les photos des produits
 
 
 	// activation des variables pour la table produits dérivés

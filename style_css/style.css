@@ -25,6 +25,10 @@
 		text-decoration: none; /* annulation du soulignement */
 	}
 
+	h1 {
+		font-size: 2.5rem; /* redifinition de tous les titres H1 du site */
+	}
+
 /* Fin initialisation générale */
 
 
