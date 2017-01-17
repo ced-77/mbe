@@ -14,6 +14,7 @@
 	// et récuperation des données de l'utilisateur
 		if ( ! empty($session) && $session != FALSE ) {
 			// on recupere les données de la session
+				$utilisateur = $_SESSION['utilisateur'];
 				
 		}
 

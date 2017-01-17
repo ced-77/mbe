@@ -22,6 +22,11 @@
 
 				<?php if ( !empty($session) && $session = TRUE ) : ?>
 
+					<!-- affichage du pseudo de connexion -->
+					<span>
+						<?php echo( $utilisateur['pseudo'] ); ?>
+					</span>
+
 					<!-- si une session existe et est ouverte on met le choix vers la page du compte -->
 					<li>
 						<a href="#">Votre compte</a>
