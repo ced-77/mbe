@@ -8,8 +8,19 @@
  */
 
 	// activation des variables générales
-		$nom_site_complet = 'Massages et Bien Etre';
-		$nom_site_court = 'MBE';
+		$societe_nom_site_complet = 'Massages et Bien Etre';
+		$societe_nom_site_court = 'MBE';
+		$societe_numero_telephone ='06.07.08.09.10';
+		$societe_adresse_mail = 'contact@mbe.fr';
+		$societe_adresse_postale = '1, rue de la capitale';
+		$societe_code_postal = '75000';
+		$societe_ville = 'Paris';
+		$societe_numero_siren = '000 00000 000';
+		$societe_numero_urssaf = '0000 0000 0000';
+		$societe_certification = '0000000000';
+
+
+
 
 
 	// activation des variables pour la base de donnee
@@ -22,6 +33,10 @@
 		$table_utilisateur = 'utilisateurs'; // nom de la table gerant les utilisateurs
 	
 
-	// activation des variables pour la table produit
-		$table_produits = 'services'; // nom de la table des produits proposés
+	// activation des variables pour la table produits
+		$table_produits = 'massages'; // nom de la table des produits proposés
+
+
+	// activation des variables pour la table produits dérivés
+		$table_produits_derives = ''; // nom de la table des sous produits ou produits dérivés
 
