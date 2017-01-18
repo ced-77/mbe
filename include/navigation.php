@@ -55,7 +55,7 @@
 
 					<!-- si une session n'existe pas on met le choix pour se connecter -->
 					<li>
-						<a href="#">Connexion</a>
+						<a href="index.php?page=connexion">Connexion</a>
 					</li>
 				<?php endif ?>
 				

@@ -7,7 +7,7 @@
 		nom de la table 
  */
 
-	// activation des variables générales
+	// activation des variables générales du site et de l'entreprise
 		$societe_nom_site_complet = 'Massages et Bien Etre';
 		$societe_nom_site_court = 'MBE';
 		$societe_numero_telephone ='06.07.08.09.10';
@@ -44,4 +44,9 @@
 
 	// activation des variables pour la table produits dérivés
 		$table_produits_derives = ''; // nom de la table des sous produits ou produits dérivés
+
+	// activation des variables pour les longueurs des champs des tables pour les formulaires
+		$pseudo_max = '';
+		$pseudo_mini = '';
+		$nom_max = '';
 

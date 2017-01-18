@@ -5,7 +5,7 @@
 		require_once ('parametre_general/parametre_general.php');
 
 	// incorporation du fichier commun de regroupement des fonctions php
-		require_once ('function/functions.php');
+		require_once ('functions/functions.php');
 
 
 	// vérification de l'ouverture de la session
@@ -26,8 +26,7 @@
 		$corp_page =''; // reinitialisation de la variable
 		$corp_page = ( empty( $_GET['page'] ) )? 'accueil' : $_GET['page'];
 
-		// verification de la variable pour voir le bug
-			var_dump($corp_page);
+		
 
 	
 

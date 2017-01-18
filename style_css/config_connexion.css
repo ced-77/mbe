@@ -1,0 +1,8 @@
+/*
+	debut du style du corp de page connexion / inscription
+ */
+
+main section {
+	display: inline-block;
+	vertical-align: top;
+}
