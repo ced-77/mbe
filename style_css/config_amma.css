@@ -1,0 +1,16 @@
+/*
+	Fichier de configuration du corp de page Massage Amma
+*/
+
+	main section {
+		margin: 2rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+		color:red;
+	}
+
+	main span {
+		font-weight: bold;
+	}

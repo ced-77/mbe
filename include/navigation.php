@@ -5,10 +5,10 @@
  	<nav>
 		<ul>
 			<li>
-				<a href="#">Accueil</a>
+				<a href="index.php?page=accueil" >Accueil</a>
 			</li>
 			<li>
-				<a href="#">Le massage amma</a>
+				<a href="index.php?page=amma" >Le massage amma</a>
 			</li>
 			<li>
 				<a href="#">Prestation</a>

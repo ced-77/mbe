@@ -23,7 +23,11 @@
 
 
 	// vérification recupération des variables GET de la barre d'adresse
+		$corp_page =''; // reinitialisation de la variable
 		$corp_page = ( empty( $_GET['page'] ) )? 'accueil' : $_GET['page'];
+
+		// verification de la variable pour voir le bug
+			var_dump($corp_page);
 
 	
 
@@ -46,7 +50,7 @@
 		<title>Site de massage</title>
 
 		<!-- insertion des feuilles CSS -->
-			<?php include ('include/css.html'); ?>
+			<?php include ('include/css.php'); ?>
 			 
 
 	</head>
