@@ -58,18 +58,18 @@
 		<header>
 			<!-- incorporation du premier bandeau -->
 				<section>
-					<img src="<?php echo($societe_chemin_nom_logo_organisme); ?>" alt="" />
-					<span>Certification n° <?php echo($societe_certification); ?></span>
+					<img src="<?php echo(SOCIETE_CHEMIN_NOM_LOGO_ORGANISME); ?>" alt="" />
+					<span>Certification n° <?php echo(SOCIETE_CERTIFICATION); ?></span>
 				</section>
 
 			<!-- incorporation du titre -->
 				<section>
 					<h1>Titre du site</h1>
 					<p>Phrase d'accroche</p>
-					<img src="<?php echo($societe_chemin_nom_logo_site); ?>" alt="" />
+					<img src="<?php echo(SOCIETE_CHEMIN_NOM_LOGO_SITE); ?>" alt="" />
 					<p>
-						<span><?php echo($societe_numero_telephone); ?></span>
-						<span><?php echo($societe_adresse_mail); ?></span>
+						<span><?php echo(SOCIETE_NUMERO_TELEPHONE); ?></span>
+						<span><?php echo(SOCIETE_ADRESSE_MAIL); ?></span>
 					</p>
 					
 				</section>

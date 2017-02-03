@@ -1,25 +1,24 @@
 <?php
 /*
 	Fichier de paramettre générale du site
-		nom du site :
-		nom de la base :
-		nom de la table utilisateur :
-		nom de la table 
+		Ecrit en CONSTANTES pour que celles-ci puissent 
+		etre récupere et utilisées n'importe où sans contrainte
+
  */
 
 	// activation des variables générales du site et de l'entreprise
-		$societe_nom_site_complet = 'Massages et Bien Etre';
-		$societe_nom_site_court = 'MBE';
-		$societe_numero_telephone ='06.07.08.09.10';
-		$societe_adresse_mail = 'contact@mbe.fr';
-		$societe_adresse_postale = '1, rue de la capitale';
-		$societe_code_postal = '75000';
-		$societe_ville = 'Paris';
-		$societe_numero_siren = '000 00000 000';
-		$societe_numero_urssaf = '0000 0000 0000';
-		$societe_certification = '0000000000';
-		$societe_chemin_nom_logo_site = '';
-		$societe_chemin_nom_logo_organisme = '';
+		SOCIETE_NOM_SITE_COMPLET = 'Massages et Bien Etre';
+		SOCIETE_NOM_SITE_COURT = 'MBE';
+		SOCIETE_NUMERO_TELEPHONE ='06.07.08.09.10';
+		SOCIETE_ADRESSE_MAIL = 'contact@mbe.fr';
+		SOCIETE_ADRESSE_POSTALE = '1, rue de la capitale';
+		SOCIETE_CODE_POSTAL = '75000';
+		SOCIETE_VILLE = 'Paris';
+		SOCIETE_NUMERO_SIREN = '000 00000 000';
+		SOCIETE_NUMERO_URSSAF = '0000 0000 0000';
+		SOCIETE_CERTIFICATION = '0000000000';
+		SOCIETE_CHEMIN_NOM_LOGO_SITE = '';
+		SOCIETE_CHEMIN_NOM_LOGO_ORGANISME = '';
 
 
 
@@ -27,26 +26,27 @@
 
 
 	// activation des variables pour la base de donnee
-		$nom_base_de_donnee = 'mbe';
-		$root_base_de_donnee = 'root';
-		$password_base_de_donnee = '';
+		NOM_BASE_DE_DONNEE = 'mbe';
+		ROOT_BASE_DE_DONNEE = 'root';
+		USERNAME_BASE_DE_DONNEE = '';
+		PASSWORD_BASE_DE_DONNEE = '';
 
 
 	// activation des variables pour la table utilisateur
-		$table_utilisateur = 'utilisateurs'; // nom de la table gerant les utilisateurs
-		$chemin_photo_utilisateur =''; // nom du chemin où se trouve les photos des utilisateurs
+		TABLE_UTILISATEUR = 'utilisateurs'; // nom de la table gerant les utilisateurs
+		CHEMIN_PHOTO_UTILISATEUR =''; // nom du chemin où se trouve les photos des utilisateurs
 	
 
 	// activation des variables pour la table produits
-		$table_produits = 'massages'; // nom de la table des produits proposés
-		$chemin_photo_produit =''; // nom du chemin où se trouve les photos des produits
+		TABLE_PRODUITS = 'massages'; // nom de la table des produits proposés
+		CHEMIN_PHOTO_PRODUIT =''; // nom du chemin où se trouve les photos des produits
 
 
 	// activation des variables pour la table produits dérivés
-		$table_produits_derives = ''; // nom de la table des sous produits ou produits dérivés
+		TABLE_PRODUITS_DERIVES = ''; // nom de la table des sous produits ou produits dérivés
 
 	// activation des variables pour les longueurs des champs des tables pour les formulaires
-		$pseudo_max = '';
-		$pseudo_mini = '';
-		$nom_max = '';
+		PSEUDO_MAX = '';
+		pseudo_mini = '';
+		NOM_MAX = '';
 

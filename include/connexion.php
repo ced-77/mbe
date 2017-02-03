@@ -34,6 +34,11 @@
 					} else { $erreurs['pseudo'] = 'Pseudo innexistant'; }
 			}
 
+			// essai des variables erreur
+				//$erreurs['pseudo'] = 'pseudo innexistant...';
+				//$erreurs['password'] = 'mot de passe non valide...';
+
+
 
 
 
@@ -50,10 +55,22 @@
   		<p>
 	  		<label for="pseudo" >Pseudo : </label>
 	  		<input type="text" name="pseudo" id="pseudo" />
+	  		<!-- affichage de la gestion d'erreur -->
+	  		<?php if ( ! empty($erreurs['pseudo']) ) : ?>
+
+	  			<span><?php echo $erreurs['pseudo']; ?></span>
+
+	  		<?php endif ?>
 		</p>
 		<p>
 	  		<label for="password" >Mot de passe : </label>
 	  		<input type="password" name="password" id="password" />
+	  		<!-- affichage de la gestion d'erreur -->
+	  		<?php if ( ! empty($erreurs['password']) ) : ?>
+
+	  			<span><?php echo $erreurs['password']; ?></span>
+	  			
+	  		<?php endif ?>
 		</p>
   		<input type="submit" name="envoyer" value="Envoyer" />
   		

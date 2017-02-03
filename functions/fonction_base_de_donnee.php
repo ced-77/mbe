@@ -6,6 +6,12 @@
 
  */
 
+	// Récupération des données de paramettre générales si ceux-ci
+	// non pas déjà été chargés. Les parametres sont déclarée en CONSTANTE
+	
+		require_once ('parametre_general/parametre_general.php');
+
+
 	/**
 	 *
 	 * Fonction gérant l'ouverture de base de donnée en PDO
@@ -15,13 +21,7 @@
 	 */
 			function ouverture_base() {
 
-				// vérification si on peut recupérer le donnee dans le fichier
-				// generale pour avoir les variables de configurations afin de
-				// ne pas les remettre en paramettre de la fonction
 				
-					require_once ('parametre_general/parametre_general.php');
-
-
 				// appel la variable $pdo qui se trouve dans le fil globale 
 				// pour vérifier si la connexion n'est pas deja creer
 				// si la variable n'exite pas GLOBAL la créé dans le fil
@@ -32,10 +32,10 @@
 					if ( !isset( $pdo ) ) {
 
 						// creation du DSN
-						$dsn = 'mysql:dbname='.$nom_base_de_donnee.';host=localhost;charset=utf8';
+						$dsn = 'mysql:dbname='.NOM_BASE_DE_DONNEE.';host=localhost;charset=utf8';
 
 						// connexion au nouveau PDO en locale SEULEMENT
-						$pdo = new PDO ($dsn,$root,'');
+						$pdo = new PDO ($dsn,ROOT_BASE_DE_DONNEE, USERNAME_BASE_DE_DONNEE, PASSWORD_BASE_DE_DONNEE);
 					}
 				// retourne le resutlat
 					return $pdo ;

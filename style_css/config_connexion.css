@@ -5,4 +5,5 @@
 main section {
 	display: inline-block;
 	vertical-align: top;
+	margin: 2rem;
 }
