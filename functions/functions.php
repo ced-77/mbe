@@ -5,7 +5,7 @@
 	de fonction du site
 
 */
-	// incorporation des parties ce code pour le fonctionnement
+	// incorporation des parties de code pour le fonctionnement
 		require_once ('declaration_session.php'); // déclaration de l'utilisation des sessions
 
 

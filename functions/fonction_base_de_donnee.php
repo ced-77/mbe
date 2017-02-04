@@ -32,9 +32,9 @@
 					if ( !isset( $pdo ) ) {
 
 						// creation du DSN
-						$dsn = 'mysql:dbname='.NOM_BASE_DE_DONNEE.';host=localhost;charset=utf8';
+						$dsn = 'mysql:dbname='.NOM_BASE_DE_DONNEE.';host='.HOST.';charset=utf8';
 
-						// connexion au nouveau PDO en locale SEULEMENT
+						// connexion au nouveau PDO
 						$pdo = new PDO ($dsn,ROOT_BASE_DE_DONNEE, USERNAME_BASE_DE_DONNEE, PASSWORD_BASE_DE_DONNEE);
 					}
 				// retourne le resutlat
