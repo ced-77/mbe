@@ -10,12 +10,38 @@
 
 	// Vérfication de l'existance d'un POST et si ok verfification de celui ci
 		if ( empty($_POST) ) {
-			// Début de la vérification de la saisie
-				// verification de l'existance de la saisie du nom
-					if ( !empty( trim($_POST['nom']) ) ) {
+      // recuperation des variables du tableau $_POST
+          $pseudo = $_POST["pseudo"];
+          $email = $_POST['email'];
 
-					} else { $erreurs['nom'] = 'Vous devez renter un nom'}		
+
+			// Début de la vérification de la saisie
+      
+
+        // vérification des champs obligatoires
+          // création d'un tableau pour vérification
+            $verification_existance = array();
+
+
+
+				// verification des conditions des champs avant enregistrement
+					
+            // verification de l'existance du pseudo
+               if ( verif_pseudo_existe( $pseudo ) ) {
+                  // vérification de l'existance de l'email
+                    if ( verif_mail_existe( $email ) ) {
+
+
+                    } else { $erreurs['email'] = 'Cette E-mail existe déjà, veuillez en saisir un nouveau.' ;}
+               } else { $erreurs['pseudo'] = 'Ce pseudonime existe déjà, veuillez en trouver un autre.'; }
+							
 		} 
+
+
+
+
+
+  // gestion des erreurs
 
 
 // Fin du script PHP
@@ -48,8 +74,8 @@
 
   	<!-- Saisie de l'adresse mail -->
   		<p>
-  			<label for="mail">E-mail :</label>
-  			<input type="email" name="mail" id="mail" /> 
+  			<label for="email">E-mail :</label>
+  			<input type="email" name="email" id="email" /> 
 
   		</p>
   	<!-- saisie du nom de famille -->
