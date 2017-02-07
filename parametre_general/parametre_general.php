@@ -1,8 +1,8 @@
 <?php
 /*
-	Fichier de paramettre générale du site
+	Fichier de parametres générales du site
 		Ecrit en CONSTANTES pour que celles-ci puissent 
-		etre récupere et utilisées n'importe où sans contrainte
+		etre récuperees et utilisées n'importe où sans contrainte
 
  */
 
@@ -49,6 +49,14 @@
 	// activation des constantes pour les longueurs des champs des tables pour les formulaires
 		define('PSEUDO_MAX', '');
 		define('PSEUDO_MINI', '');
+
 		define('NOM_MAX', '');
 		define('NOM_MINI', '');
+
+		define('PRENOM_MAX', '');
+		define('PRENOM_MINI', '');
+		
+		define('PASSWORD_MAX', '');
+		define('PASSWORD_MINI', '');
+
 

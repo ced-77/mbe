@@ -8,10 +8,24 @@
 	// initialisation du tableau des erreurs
 		$erreurs = array();
 
+  
+
+
 	// Vérfication de l'existance d'un POST et si ok verfification de celui ci
-		if ( empty($_POST) ) {
+		if ( ! empty($_POST) ) {
+      // initialisation du tableau de controle des champs obligatoire
+          $champs_obligatoire = array(
+              'pseudo' => 'pseudo',
+              'email' => 'email',
+              'password' => 'password',
+               );
+
+          
+
+
+
       // recuperation des variables du tableau $_POST
-          $pseudo = $_POST["pseudo"];
+          $pseudo = $_POST['pseudo'];
           $email = $_POST['email'];
 
 
@@ -57,7 +71,7 @@
   	<!-- Saisie du pseudo -->
   		<p>
   			<label for="pseudo" >Pseudo :</label>
-  			<input type="text" name="pseudo" id="pseudo" /> 
+  			<input type="text" name="pseudo" id="pseudo" placeholder="Texte" /> 
   		</p>
 
   	<!-- Saisie du mot de passe -->
@@ -75,21 +89,25 @@
   	<!-- Saisie de l'adresse mail -->
   		<p>
   			<label for="email">E-mail :</label>
-  			<input type="email" name="email" id="email" /> 
+  			<input type="email" name="email" id="email"  placeholder="Email@mail.mail" value="" /> 
 
   		</p>
   	<!-- saisie du nom de famille -->
   		<p>
   			<label for="nom">Nom :</label>
-  			<input type="text" name="nom" id="nom" value="" />
+  			<input type="text" name="nom" id="nom" placeholder="Min = , Max = " value="" />
   		</p>
   	<!-- Saisie du prenom -->
   		<p>
   			<label for="prenom" >Prénom :</label>
-  			<input type="text" name="prenom" id="prenom" id="prenom" />
+  			<input type="text" name="prenom" placeholder="Min = , Max = " id="prenom" />
   		</p>
 
   	<!-- Saisie du téléphone -->
+      <p>
+        <label for="telephone">Téléphone :</label>
+        <input type="text" name="telephone" id="telephone" placeholder="+33XXXXXXXXX" />
+      </p>
 
   	<!-- Definition de l'acreditation en input hiden -->
   		<input type="hidden" name="acreditation" value="0" />

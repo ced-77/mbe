@@ -47,17 +47,70 @@
 
 
 	/**
-	 *
-	 * 	Fonction pour récupérer la liste complète 
-	 * 	d'une table précise
-	 *
-	 * 	@param string  $table, nom de la table à récupérer
-	 * 	@return array , liste complète de tous les champs avec toutes les données
-	 * 	
-	 */
-			function toutes_donnees($table) {
-				
+	*				estPoste()
+	*
+	*	fonction qui va vérifier l'existence d'un champ du formulaire 
+	* et la non-vacuité d'un champ posté par la varible ($_POST)
+	*
+	* @param string $champ le nom du champ à vérifier
+	*
+	* @return boolean, TRUE si le champ existe et est rempli sinon FALSE
+	*/
+		function estPoste($champ) {
+			$existe = (! empty($_POST[$champ]) && trim($_POST[$champ]) !== '' ) ;
+			
+			return $existe; // retourne le resultat TRUE ou FALSE
 
-			// fin de la fonction toutes_donnees
-			}
+		// fin de la fonction estPoste
+		}
+
+
+
+	/**
+	*				longueurEntre()
+	*
+	*	fonction pour controler la longueur d'un champs 
+	*  avec un minimum et un maximum de caractère
+	* 
+	*  @param string $champ , nom du champ à vérifier
+	*  @param int $min, longueur minimum du champ
+	*  @param int $max, longueur maximum du champ
+	*
+	*  @return boolean, TRUE si compris entre min et max sinon FALSE 
+	*/
+
+		function longueurEntre($champ, $min, $max) {
+			// vérification de l'éxistance du champ
+				if (estPoste($champ)) {
+					// si le champ existe
+					// on calcule sa longeur
+						$longueurChamp = strlen($_POST[$champ]);
+
+						// on renvoie le resultat sur la condition de sa longueur mini et maxi
+							return ($longueurChamp >= $min && $longueurChamp <= $max);
+
+				// fin de la condition sur l'existance 
+				} else {
+					return FALSE;
+				}
+
+			
+		// fin de la fonction longeurEntre()
+		}
+
+
+	/**
+	 *				emailValide() 
+	 *
+	 *	fonction pour controler la validitée de l'e-mail
+	 *
+	 *	@param string $champ, nom de l'adresse mail
+	 *
+	 *	@return boolean, TRUE si l'adresse est valide sinon FALSE
+	 */
+
+		function emailValide($champ) {
+			return !empty($_POST[$champ]) && filter_var($_POST[$champ], FILTER_VALIDATE_EMAIL) !== FALSE;
+		}
+
 
