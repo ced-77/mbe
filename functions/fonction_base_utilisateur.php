@@ -8,10 +8,10 @@
 	// Récuperation des paramettre genarale si celles-ci
 	// non pas déjà été chargées.
 	
-		require_once ('../parametre_general/parametre_general.php'); 
+		require_once ('parametre_general/parametre_general.php'); 
 
 	// récuperation des fonctions
-		require_once ('functions.php');
+		require_once ('functions/functions.php');
 
 	/*
 		Fonctions d'ordre générales
@@ -29,7 +29,7 @@
 		 * 
 		 */
 		
-			function verif_pseudo_exite( $pseudo ) {
+			function verif_pseudo_exsite( $pseudo ) {
 				// ouverture de la base de donnée
 					$pdo = ouverture_base();
 				

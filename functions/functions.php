@@ -12,6 +12,7 @@
 	// incorporation des fichiers de fonctions
 		require_once ('fonction_base_de_donnee.php'); 	// fonction gérant la base de donnée
 		require_once ('fonction_session.php');			// fonction gérant la session
+		require_once ('fonction_base_utilisateur.php'); // fonctions gérant la base utilisateur
 
 
 

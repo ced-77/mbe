@@ -13,13 +13,9 @@
 
 	// Vérfication de l'existance d'un POST et si ok verfification de celui ci
 		if ( ! empty($_POST) ) {
-      // initialisation du tableau de controle des champs obligatoire
-          $champs_obligatoire = array(
-              'pseudo' => 'pseudo',
-              'email' => 'email',
-              'password' => 'password',
-               );
 
+      var_dump($_POST);
+      
           
 
 
@@ -27,14 +23,40 @@
       // recuperation des variables du tableau $_POST
           $pseudo = $_POST['pseudo'];
           $email = $_POST['email'];
+          $password = $_POST['mot_de_passe'];
+
 
 
 			// Début de la vérification de la saisie
       
 
         // vérification des champs obligatoires
-          // création d'un tableau pour vérification
-            $verification_existance = array();
+           // initialisation du tableau de controle des champs obligatoire
+            $champs_obligatoire = array(
+                'pseudo' => 'pseudo',
+                'email' => 'email',
+                'mot_de_passe' => 'mot_de_passe',
+                 );
+
+           // verification de l'existance des champs du formulaire et du remplissage des champs du formulaire
+                  foreach ($champs_obligatoire as $champBienEcrit => $champ) {
+
+                    if ( ! estPoste($champ)) { // si resultat faux (FALSE)
+                      
+                      // ajout d'un message d'erreur
+                        $erreurs[$champ] = '-  Ce champ est obligatoire -';
+
+                      // verification
+                        var_dump($champ);
+                        var_dump($erreurs[$champ]);
+
+
+                    // fin du if estPoste()
+                    }
+                  // fin du foreach pour l'existance et le remplissage des champs
+                  }
+
+
 
 
 

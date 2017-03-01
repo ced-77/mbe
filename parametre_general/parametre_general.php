@@ -47,16 +47,16 @@
 		define('TABLE_PRODUITS_DERIVES', ''); // nom de la table des sous produits ou produits dérivés
 
 	// activation des constantes pour les longueurs des champs des tables pour les formulaires
-		define('PSEUDO_MAX', '');
-		define('PSEUDO_MINI', '');
+		define('PSEUDO_MAX', '50');
+		define('PSEUDO_MINI', '3');
 
-		define('NOM_MAX', '');
-		define('NOM_MINI', '');
+		define('NOM_MAX', '50');
+		define('NOM_MINI', '3');
 
-		define('PRENOM_MAX', '');
-		define('PRENOM_MINI', '');
+		define('PRENOM_MAX', '50');
+		define('PRENOM_MINI', '3');
 		
-		define('PASSWORD_MAX', '');
-		define('PASSWORD_MINI', '');
+		define('PASSWORD_MAX', '50');
+		define('PASSWORD_MINI', '0');
 
 
